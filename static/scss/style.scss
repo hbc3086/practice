@@ -1,3 +1,5 @@
+@import "mixin", "svg", "mixin";
+
 @font-face {
   src: url("/font/NotoSansKR-Bold.woff");
   font-family: "NotoSansKR-Bold";
@@ -25,21 +27,26 @@
   background-color: #ffffff;
   overflow: hidden;
 
-  header {
+  .main {
     position: absolute;
+    overflow: visible;
+  }
+
+  header {
+    position: fixed;
     z-index: 2;
-    width: 1180px;
-    height: 40.5px;
+    width: 100%;
+    height: 40px;
     left: 150px;
     top: 36px;
-    overflow: visible;
+    margin: 0 auto;
 
     .header_logo {
       position: absolute;
       width: 224.901px;
       height: 25px;
       left: 0px;
-      top: 4px;
+      top: 0px;
       overflow: visible;
 
       .header_logo_img {
@@ -60,7 +67,7 @@
       top: 1px;
       overflow: visible;
 
-      .icon {
+      .ico {
         position: absolute;
         width: 17.78px;
         height: 20px;
@@ -78,11 +85,11 @@
         top: 0px;
         overflow: visible;
 
-        &:hover > .icon4 {
+        &:hover > .ico4 {
           opacity: 1;
         }
 
-        .icon2 {
+        .ico2 {
           position: absolute;
           width: 20px;
           height: 20px;
@@ -92,7 +99,7 @@
           background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='아이콘-언어' transform='translate(-1139 -387)'%3E%3Cg id='타원_1' data-name='타원 1' transform='translate(1139 387)' fill='none' stroke='%23fff' stroke-width='1'%3E%3Ccircle cx='10' cy='10' r='10' stroke='none'/%3E%3Ccircle cx='10' cy='10' r='9.5' fill='none'/%3E%3C/g%3E%3Cg id='타원_2' data-name='타원 2' transform='translate(1139 393)' fill='none' stroke='%23fff' stroke-width='1'%3E%3Cellipse cx='10' cy='4' rx='10' ry='4' stroke='none'/%3E%3Cellipse cx='10' cy='4' rx='9.5' ry='3.5' fill='none'/%3E%3C/g%3E%3Cg id='타원_3' data-name='타원 3' transform='translate(1145 407) rotate(-90)' fill='none' stroke='%23fff' stroke-width='1'%3E%3Cellipse cx='10' cy='4' rx='10' ry='4' stroke='none'/%3E%3Cellipse cx='10' cy='4' rx='9.5' ry='3.5' fill='none'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
         }
 
-        .icon3 {
+        .ico3 {
           overflow: visible;
           position: absolute;
           width: 8px;
@@ -103,7 +110,7 @@
           top: 12px;
         }
 
-        .icon4 {
+        .ico4 {
           overflow: visible;
           position: absolute;
           width: 55px;
@@ -135,7 +142,7 @@
 
   section {
     position: absolute;
-    width: 1942.89px;
+    width: 100%;
     height: 2455px;
     left: -425px;
     top: 0px;
@@ -246,7 +253,7 @@
 
     .main_section2 {
       position: absolute;
-      width: 1480px;
+      width: 100%;
       height: 830px;
       left: 425px;
       top: 930px;
@@ -254,7 +261,7 @@
 
       .main_section2_img {
         position: absolute;
-        width: 1480px;
+        width: 100%;
         height: 830px;
         left: 0px;
         top: 0px;
@@ -262,7 +269,7 @@
 
         .main2_img {
           position: absolute;
-          width: 1480px;
+          width: 100%;
           height: 830px;
           left: 0px;
           top: 0px;
@@ -273,7 +280,7 @@
 
     .main_section3 {
       position: absolute;
-      width: 1330px;
+      width: 100%;
       height: 695px;
       left: 425px;
       top: 1760px;
@@ -283,7 +290,7 @@
 
   footer {
     position: absolute;
-    width: 1480px;
+    width: 100%;
     height: 230px;
     left: 0px;
     top: 2455px;
@@ -292,7 +299,7 @@
     .footer_bc {
       position: absolute;
       overflow: visible;
-      width: 1480px;
+      width: 100%;
       height: 230px;
       left: 0px;
       top: 0px;
@@ -683,7 +690,7 @@
       transition: all 0.3s;
     }
 
-    .text1 {
+    .txt1 {
       position: absolute;
       width: 174px;
       height: 57px;
@@ -692,7 +699,7 @@
       overflow: visible;
       transition: all 0.3s;
 
-      .text_l {
+      .txt_l {
         left: 25px;
         top: 19px;
         position: absolute;
@@ -708,7 +715,7 @@
         transition: 0.3s;
       }
 
-      &:hover > .text_l {
+      &:hover > .txt_l {
         color: #3cc1c6;
       }
 
@@ -728,7 +735,7 @@
       }
     }
 
-    .text2 {
+    .txt2 {
       position: absolute;
       width: 174px;
       height: 57px;
@@ -737,7 +744,7 @@
       overflow: visible;
       transition: all 0.3s;
 
-      .text_r {
+      .txt_r {
         left: 25px;
         top: 19px;
         position: absolute;
@@ -1080,7 +1087,7 @@
     color: #b1b1b1;
     transition: all 0.3s;
   }
-  .select_box {
+  .slct {
     position: absolute;
     width: 380px;
     height: 45px;
@@ -1091,7 +1098,7 @@
     transition: all 0.3s;
   }
 
-  .select_box2 {
+  .slct2 {
     position: absolute;
     overflow: visible;
     width: 380px;
@@ -1104,7 +1111,7 @@
     transition: all 0.3s;
   }
 
-  .select_box:hover + .select_box2 {
+  .slct:hover + .slct2 {
     display: block;
   }
   .address {
@@ -1181,7 +1188,7 @@
       overflow: visible;
       transition: all 0.3s;
 
-      .box {
+      .bx {
         position: absolute;
         overflow: visible;
         width: 560px;
@@ -1192,7 +1199,7 @@
         transition: all 0.3s;
       }
 
-      .text {
+      .txt {
         position: absolute;
         width: 478px;
         height: 75px;
@@ -1201,7 +1208,7 @@
         overflow: visible;
         transition: all 0.3s;
 
-        .text_1 {
+        .txt_1 {
           left: 0px;
           top: 0px;
           position: absolute;
@@ -1216,7 +1223,7 @@
           letter-spacing: -0.25px;
         }
 
-        .text_2 {
+        .txt_2 {
           left: 91px;
           top: 23px;
           position: absolute;
@@ -1261,7 +1268,7 @@
       overflow: visible;
       transition: all 0.3s;
 
-      .box {
+      .bx {
         position: absolute;
         overflow: visible;
         width: 560px;
@@ -1272,7 +1279,7 @@
         transition: all 0.3s;
       }
 
-      .text {
+      .txt {
         position: absolute;
         width: 478px;
         height: 75px;
@@ -1281,7 +1288,7 @@
         overflow: visible;
         transition: all 0.3s;
 
-        .text_1 {
+        .txt_1 {
           left: 0px;
           top: 0px;
           position: absolute;
@@ -1296,7 +1303,7 @@
           letter-spacing: -0.25px;
         }
 
-        .text_2 {
+        .txt_2 {
           left: 91px;
           top: 23px;
           position: absolute;
@@ -1341,7 +1348,7 @@
       overflow: visible;
       transition: all 0.3s;
 
-      .box {
+      .bx {
         position: absolute;
         overflow: visible;
         width: 560px;
@@ -1352,7 +1359,7 @@
         transition: all 0.3s;
       }
 
-      .text {
+      .txt {
         position: absolute;
         width: 478px;
         height: 75px;
@@ -1361,7 +1368,7 @@
         overflow: visible;
         transition: all 0.3s;
 
-        .text_1 {
+        .txt_1 {
           left: 0px;
           top: 0px;
           position: absolute;
@@ -1376,7 +1383,7 @@
           letter-spacing: -0.25px;
         }
 
-        .text_2 {
+        .txt_2 {
           left: 91px;
           top: 23px;
           position: absolute;
@@ -1421,7 +1428,7 @@
       overflow: visible;
       transition: all 0.3s;
 
-      .box {
+      .bx {
         position: absolute;
         overflow: visible;
         width: 560px;
@@ -1432,7 +1439,7 @@
         transition: all 0.3s;
       }
 
-      .text {
+      .txt {
         position: absolute;
         width: 478px;
         height: 75px;
@@ -1441,7 +1448,7 @@
         overflow: visible;
         transition: all 0.3s;
 
-        .text_1 {
+        .txt_1 {
           left: 0px;
           top: 0px;
           position: absolute;
@@ -1456,7 +1463,7 @@
           letter-spacing: -0.25px;
         }
 
-        .text_2 {
+        .txt_2 {
           left: 91px;
           top: 23px;
           position: absolute;
@@ -1653,7 +1660,7 @@
         transition: all 0.3s;
       }
 
-      .text {
+      .txt {
         left: 58px;
         top: 205px;
         position: absolute;
@@ -1670,12 +1677,12 @@
         transition: all 0.3s;
       }
 
-      &:hover > .text {
+      &:hover > .txt {
         top: 97.342px;
         color: #3cc1c6;
       }
 
-      .text2 {
+      .txt2 {
         left: 53px;
         top: 197.546px;
         position: absolute;
@@ -1693,7 +1700,7 @@
         transition: all 0.3s;
       }
 
-      &:hover > .text2 {
+      &:hover > .txt2 {
         opacity: 1;
       }
 
@@ -2016,7 +2023,7 @@
       transition: all 0.3s;
     }
 
-    .text1 {
+    .txt1 {
       position: absolute;
       width: 174px;
       height: 57px;
@@ -2025,7 +2032,7 @@
       overflow: visible;
       transition: all 0.3s;
 
-      .text_l {
+      .txt_l {
         left: 25px;
         top: 19px;
         position: absolute;
@@ -2041,7 +2048,7 @@
         transition: 0.3s;
       }
 
-      &:hover > .text_l {
+      &:hover > .txt_l {
         color: #3cc1c6;
       }
 
@@ -2061,7 +2068,7 @@
       }
     }
 
-    .text2 {
+    .txt2 {
       position: absolute;
       width: 174px;
       height: 57px;
@@ -2070,7 +2077,7 @@
       overflow: visible;
       transition: all 0.3s;
 
-      .text_r {
+      .txt_r {
         left: 25px;
         top: 19px;
         position: absolute;
@@ -2415,7 +2422,7 @@
     color: #b1b1b1;
     transition: all 0.3s;
   }
-  .select_box {
+  .slct {
     position: absolute;
     width: 380px;
     height: 45px;
@@ -2426,7 +2433,7 @@
     transition: all 0.3s;
   }
 
-  .select_box2 {
+  .slct2 {
     position: absolute;
     overflow: visible;
     width: 380px;
@@ -2439,7 +2446,7 @@
     transition: all 0.3s;
   }
 
-  .select_box:hover + .select_box2 {
+  .slct:hover + .slct2 {
     display: block;
   }
   .address {
@@ -2516,7 +2523,7 @@
       overflow: visible;
       transition: all 0.3s;
 
-      .box {
+      .bx {
         position: absolute;
         overflow: visible;
         width: 280px;
@@ -2527,7 +2534,7 @@
         transition: all 0.3s;
       }
 
-      .text {
+      .txt {
         position: absolute;
         width: 200px;
         height: 75px;
@@ -2536,7 +2543,7 @@
         overflow: visible;
         transition: all 0.3s;
 
-        .text_1 {
+        .txt_1 {
           left: 0px;
           top: 0px;
           position: absolute;
@@ -2552,7 +2559,7 @@
           display: none;
         }
 
-        .text_2 {
+        .txt_2 {
           left: 0px;
           top: 14px;
           position: absolute;
@@ -2597,7 +2604,7 @@
       overflow: visible;
       transition: all 0.3s;
 
-      .box {
+      .bx {
         position: absolute;
         overflow: visible;
         width: 280px;
@@ -2608,7 +2615,7 @@
         transition: all 0.3s;
       }
 
-      .text {
+      .txt {
         position: absolute;
         width: 200px;
         height: 75px;
@@ -2617,7 +2624,7 @@
         overflow: visible;
         transition: all 0.3s;
 
-        .text_1 {
+        .txt_1 {
           left: 0px;
           top: 0px;
           position: absolute;
@@ -2633,7 +2640,7 @@
           display: none;
         }
 
-        .text_2 {
+        .txt_2 {
           left: 0px;
           top: 14px;
           position: absolute;
@@ -2678,7 +2685,7 @@
       overflow: visible;
       transition: all 0.3s;
 
-      .box {
+      .bx {
         position: absolute;
         overflow: visible;
         width: 280px;
@@ -2689,7 +2696,7 @@
         transition: all 0.3s;
       }
 
-      .text {
+      .txt {
         position: absolute;
         width: 200px;
         height: 75px;
@@ -2698,7 +2705,7 @@
         overflow: visible;
         transition: all 0.3s;
 
-        .text_1 {
+        .txt_1 {
           left: 0px;
           top: 0px;
           position: absolute;
@@ -2714,7 +2721,7 @@
           display: none;
         }
 
-        .text_2 {
+        .txt_2 {
           left: 0px;
           top: 14px;
           position: absolute;
@@ -2759,7 +2766,7 @@
       overflow: visible;
       transition: all 0.3s;
 
-      .box {
+      .bx {
         position: absolute;
         overflow: visible;
         width: 280px;
@@ -2770,7 +2777,7 @@
         transition: all 0.3s;
       }
 
-      .text {
+      .txt {
         position: absolute;
         width: 200px;
         height: 75px;
@@ -2779,7 +2786,7 @@
         overflow: visible;
         transition: all 0.3s;
 
-        .text_1 {
+        .txt_1 {
           left: 0px;
           top: 0px;
           position: absolute;
@@ -2795,7 +2802,7 @@
           display: none;
         }
 
-        .text_2 {
+        .txt_2 {
           left: 0px;
           top: 14px;
           position: absolute;
@@ -2992,7 +2999,7 @@
         transition: all 0.3s;
       }
 
-      .text {
+      .txt {
         left: 58px;
         top: 115px;
         position: absolute;
@@ -3009,12 +3016,12 @@
         transition: all 0.3s;
       }
 
-      &:hover > .text {
+      &:hover > .txt {
         top: 40px;
         color: #3cc1c6;
       }
 
-      .text2 {
+      .txt2 {
         left: 53px;
         top: 100px;
         position: absolute;
@@ -3031,7 +3038,7 @@
         transition: all 0.3s;
       }
 
-      &:hover > .text2 {
+      &:hover > .txt2 {
         opacity: 1;
       }
 

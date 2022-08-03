@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <div class="wrap main">
     <header>
       <NuxtLink to="/" class="header_logo">
         <img class="header_logo_img" src="\img\header_logo.png" />
@@ -31,14 +31,14 @@
         </div>
       </nav>
       <div class="header_info">
-        <div class="icon"></div>
+        <div class="ico"></div>
         <div class="header_info_lng">
-          <div class="icon2"></div>
+          <div class="ico2"></div>
           <div class="KR">
             <span>KR</span>
           </div>
-          <div class="icon3"></div>
-          <div class="icon4"></div>
+          <div class="ico3"></div>
+          <div class="ico4"></div>
         </div>
       </div>
     </header>
@@ -51,56 +51,56 @@
             <span>News & Notice</span>
           </div>
           <div class="main3_left_1">
-            <div class="box"></div>
-            <div class="text">
-              <div class="text_1">
+            <div class="bx"></div>
+            <div class="txt">
+              <div class="txt_1">
                 <span>01</span><br /><span style="font-size: 19px"
                   >2022.01</span
                 >
               </div>
-              <div class="text_2">
+              <div class="txt_2">
                 <span>유니콘랜치 텐배거 서비스 베타버전 오픈</span>
               </div>
             </div>
             <div class="arrow"></div>
           </div>
           <div class="main3_left_2">
-            <div class="box"></div>
-            <div class="text">
-              <div class="text_1">
+            <div class="bx"></div>
+            <div class="txt">
+              <div class="txt_1">
                 <span>01</span><br /><span style="font-size: 19px"
                   >2022.01</span
                 >
               </div>
-              <div class="text_2">
+              <div class="txt_2">
                 <span>유니콘랜치 텐배거 서비스 베타버전 오픈</span>
               </div>
             </div>
             <div class="arrow"></div>
           </div>
           <div class="main3_left_3">
-            <div class="box"></div>
-            <div class="text">
-              <div class="text_1">
+            <div class="bx"></div>
+            <div class="txt">
+              <div class="txt_1">
                 <span>01</span><br /><span style="font-size: 19px"
                   >2022.01</span
                 >
               </div>
-              <div class="text_2">
+              <div class="txt_2">
                 <span>유니콘랜치 텐배거 서비스 베타버전 오픈</span>
               </div>
             </div>
             <div class="arrow"></div>
           </div>
           <div class="main3_left_4">
-            <div class="box"></div>
-            <div class="text">
-              <div class="text_1">
+            <div class="bx"></div>
+            <div class="txt">
+              <div class="txt_1">
                 <span>01</span><br /><span style="font-size: 19px"
                   >2022.01</span
                 >
               </div>
-              <div class="text_2">
+              <div class="txt_2">
                 <span>유니콘랜치 텐배거 서비스 베타버전 오픈</span>
               </div>
             </div>
@@ -145,10 +145,10 @@
           </div>
           <div class="main3_right_2">
             <img class="img" src="\img\main3_2.png" />
-            <div class="text">
+            <div class="txt">
               <span>온라인 문의</span>
             </div>
-            <div class="text2">
+            <div class="txt2">
               <span
                 >온라인을 통한<br />고객문의를 지원합니다.<br />최대한 빠른
                 서비스로<br />응대합니다.</span
@@ -170,14 +170,14 @@
           <div class="About_Unicorn_Ranch">
             <span>About<br />Unicorn Ranch</span>
           </div>
-          <div class="text1">
-            <div class="text_l">
+          <div class="txt1">
+            <div class="txt_l">
               <span>기업소개</span>
             </div>
             <div class="button"></div>
           </div>
-          <div class="text2">
-            <div class="text_r">
+          <div class="txt2">
+            <div class="txt_r">
               <span>연혁 및 비전</span>
             </div>
             <div class="button"></div>
@@ -302,8 +302,8 @@
       <div class="email">
         <span>이메일무단수집거부</span>
       </div>
-      <div class="select_box"></div>
-      <div class="select_box2"></div>
+      <div class="slct"></div>
+      <div class="slct2"></div>
     </footer>
   </div>
 </template>
